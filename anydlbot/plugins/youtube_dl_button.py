@@ -330,7 +330,7 @@ async def youtube_dl_call_back(bot, update):
                     i = 0
                     caption = "© enc."
                     if is_w_f:
-                        caption = "upgrade to Plan to remove the watermark"
+                        caption = "upgrade the Plan to remove the watermark"
                     for image in images:
                         if os.path.exists(image):
                             if i == 0:
