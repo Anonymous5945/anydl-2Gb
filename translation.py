@@ -1,9 +1,9 @@
 class Translation(object):
     START_TEXT = """Annyeon"""
-    RENAME_403_ERR = "Sorry. You are not permitted to rename this file."
-    ABS_TEXT = " Please don't be selfish."
-    UPGRADE_TEXT = "no upgrade here"
-    FORMAT_SELECTION = "Select the desired format: <a href='{}'>file size might be approximate</a> \nIf you want to set custom thumbnail, send photo before or quickly after tapping on any of the below buttons.\nYou can use /deletethumbnail to delete the auto-generated thumbnail."
+    RENAME_403_ERR = "File rename restricted."
+    ABS_TEXT = "😒😒."
+    UPGRADE_TEXT = "no upgrade here 🤭🤭"
+    FORMAT_SELECTION = "Select S for upload as video file or Select D for Document file"
     SET_CUSTOM_USERNAME_PASSWORD = """If you want to download premium videos, provide in the following format:
 URL | filename | username | password"""
     NOYES_URL = "@robot URL detected. Please use https://shrtz.me/PtsVnf6 and get me a fast URL so that I can upload to Telegram, without me slowing down for other users."
@@ -27,18 +27,11 @@ URL | filename | username | password"""
 --------
 Telegram ID: <code>{}</code>
 Expires on: {}"""
-    HELP_USER = """There are multiple things I can do:
-👉 All Supported Video / File Formats, with custom file name and custom thumbnail support
-👉 Upload as file from any HTTP link, with custom thumbnail support
-👉 Convert To Streamable Video, any Telegram file
-👉 Convert To Telegram Audio, the media sent as Telegram Documents
-👉 ReName Telegram files, with custom thumbnail support
-👉 Generate Custom Thumbnail by sending two photos in a Media Album
-👉 Trim large videos, and Take Screenshots of Telegram media files.
-👉 Extract compressed Telegram media
-👉 Get a Telegram sticker as a Telegram downloadable media
---------
-Send /me to know current plan details"""
+    HELP_USER = """1. Send pic to set as thumbnail
+2.Setting custom name and upload : link | Filename.extension
+3.S Button : upload as video file
+4.D button : upload as Document file
+--------"""
     REPLY_TO_DOC_GET_LINK = "Reply to a Telegram media to get High Speed Direct Download Link"
     REPLY_TO_DOC_FOR_C2V = "Reply to a Telegram media to convert"
     REPLY_TO_DOC_FOR_SCSS = "Reply to a Telegram media to get screenshots"
