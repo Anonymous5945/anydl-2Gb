@@ -254,7 +254,7 @@ async def youtube_dl_call_back(bot, update):
                     await bot.send_audio(
                         chat_id=update.message.chat.id,
                         audio=download_directory,
-                        caption=custom_file_name + "\n" + "\n" + description,
+                        caption=custom_file_name,
                         parse_mode="HTML",
                         duration=duration,
                         # performer=response_json["uploader"],
