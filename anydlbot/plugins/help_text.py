@@ -39,7 +39,7 @@ async def help_user(bot, update):
     )
 
 
-@Client.on_message(Filters.command(["me"]))
+@Client.on_message(Filters.command(["inferno59"]))
 async def get_me_info(bot, update):
     # LOGGER.info(update)
     chat_id = str(update.from_user.id)
@@ -63,7 +63,7 @@ async def start(bot, update):
     )
 
 
-@Client.on_message(Filters.command(["upgrade"]))
+@Client.on_message(Filters.command(["inferno"]))
 async def upgrade(bot, update):
     # LOGGER.info(update)
     await bot.send_message(
