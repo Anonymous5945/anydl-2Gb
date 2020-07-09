@@ -171,7 +171,7 @@ async def ddl_call_back(bot, update):
                 await bot.send_audio(
                     chat_id=update.message.chat.id,
                     audio=download_directory,
-                    caption=custom_file_name,
+                    caption="<code>" + custom_file_name + "</code>",
                     duration=duration,
                     # performer=response_json["uploader"],
                     # title=response_json["title"],
@@ -190,7 +190,7 @@ async def ddl_call_back(bot, update):
                     chat_id=update.message.chat.id,
                     document=download_directory,
                     thumb=thumb_image_path,
-                    caption=custom_file_name + "\n" + "\n" + description,
+                    caption="<code>" + custom_file_name + "</code>" + "\n" + "\n" + description,
                     # reply_markup=reply_markup,
                     reply_to_message_id=update.message.reply_to_message.message_id,
                     progress=progress_for_pyrogram,
@@ -204,7 +204,7 @@ async def ddl_call_back(bot, update):
                 await bot.send_video_note(
                     chat_id=update.message.chat.id,
                     video_note=download_directory,
-                    caption=custom_file_name + "\n" + "\n" + description,
+                    caption="<code>" + custom_file_name + "</code>" + "\n" + "\n" + description,
                     duration=duration,
                     length=width,
                     thumb=thumb_image_path,
@@ -220,7 +220,7 @@ async def ddl_call_back(bot, update):
                 await bot.send_video(
                     chat_id=update.message.chat.id,
                     video=download_directory,
-                    caption=custom_file_name + "\n" + "\n" + description,
+                    caption="<code>" + custom_file_name + "</code>" + "\n" + "\n" + description,
                     duration=duration,
                     width=width,
                     height=height,
