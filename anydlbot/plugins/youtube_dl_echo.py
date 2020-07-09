@@ -272,7 +272,7 @@ async def echo(bot, update):
         await update.reply_photo(
             photo=thumb_image_path,
             quote=True,
-            caption=Translation.FORMAT_SELECTION + "\n" + Translation.SET_CUSTOM_USERNAME_PASSWORD,
+            caption=Translation.FORMAT_SELECTION + "\n" + "\n" + Translation.SET_CUSTOM_USERNAME_PASSWORD,
             reply_markup=reply_markup,
             parse_mode="html"
         )
