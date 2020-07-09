@@ -328,9 +328,9 @@ async def youtube_dl_call_back(bot, update):
                 media_album_p = []
                 if images is not None:
                     i = 0
-                    caption = "© @AnyDLBot"
+                    caption = "© enc."
                     if is_w_f:
-                        caption = "/upgrade to Plan D to remove the watermark\n© @AnyDLBot"
+                        caption = "upgrade to Plan to remove the watermark"
                     for image in images:
                         if os.path.exists(image):
                             if i == 0:
