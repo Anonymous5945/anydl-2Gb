@@ -3,8 +3,7 @@ class Translation(object):
     RENAME_403_ERR = "File rename restricted."
     ABS_TEXT = "😒😒."
     UPGRADE_TEXT = "no upgrade here 🤭🤭"
-    FORMAT_SELECTION = "Select S for upload as video file or Select D for upload as Document file.<a href='{}'>Default Thumb</a>
-Note: for custom thumbnail send pic before clicking below Button"
+    FORMAT_SELECTION = "Select S for upload as video file or Select D for upload as Document file.\n\nNote: for custom thumbnail send pic before clicking below Button"
     SET_CUSTOM_USERNAME_PASSWORD = """If you want to download premium videos, provide in the following format:
 URL | filename | username | password"""
     NOYES_URL = "@robot URL detected. Please use https://shrtz.me/PtsVnf6 and get me a fast URL so that I can upload to Telegram, without me slowing down for other users."
