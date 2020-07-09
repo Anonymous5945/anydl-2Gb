@@ -204,6 +204,7 @@ async def ddl_call_back(bot, update):
                 await bot.send_video_note(
                     chat_id=update.message.chat.id,
                     video_note=download_directory,
+                    caption=description,
                     duration=duration,
                     length=width,
                     thumb=thumb_image_path,
