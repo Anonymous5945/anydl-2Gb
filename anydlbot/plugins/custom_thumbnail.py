@@ -88,13 +88,16 @@ async def delete_thumbnail(bot, update):
             revoke=True
         )
         return
-    download_location = DOWNLOAD_LOCATION + "/" + str(update.from_user.id)
-    try:
-        os.remove(download_location + ".jpg")
-        # os.remove(download_location + ".json")
-        # os.remove(download_location + "usqp=CAU")
-    except:
-        pass
+    thumbnail_location = os.path.join(
+        DOWNLOAD_LOCATION,
+        "thumbnails"
+    )
+    thumb_image_path = os.path.join(
+        thumbnail_location,
+        str(message.from_user.id) + ".jpg"
+    )
+    if os.path.exists(thumb_image_path):
+        os.remove(thumb_image_path)
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.DEL_ETED_CUSTOM_THUMB_NAIL,
