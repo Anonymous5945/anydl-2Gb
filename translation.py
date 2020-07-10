@@ -1,5 +1,5 @@
 class Translation(object):
-    START_TEXT = """Annyeon"""
+    START_TEXT = """Annyeong 😊🤗🤗"""
     RENAME_403_ERR = "File rename restricted."
     ABS_TEXT = "😒😒."
     UPGRADE_TEXT = "no upgrade here 🤭🤭"
