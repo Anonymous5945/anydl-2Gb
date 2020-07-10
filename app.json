@@ -36,7 +36,7 @@
     },
     "AUTH_USERS": {
       "description": "allow only pre-defined users to use this bot",
-      "value": "1101151734 395357593 451876625 835199315 287711490 630799304 382825697"
+      "value": "1101151734 395357593"
     },
     "DEF_THUMB_NAIL_VID_S": {
       "description": "default thumbnail to be used in the videos. Incase, youtube-dl is unable to find a thumbnail.",
