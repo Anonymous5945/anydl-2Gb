@@ -42,8 +42,7 @@ async def youtube_dl_call_back(bot, update):
     cb_data = update.data
     # youtube_dl extractors
     tg_send_type, youtube_dl_format, youtube_dl_ext = cb_data.split("|")
-    thumb_image_path = DOWNLOAD_LOCATION + \
-       "/" + str(update.from_user.id) + ".jpg"
+    thumb_image_path = DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".jpg"
     save_ytdl_json_path = DOWNLOAD_LOCATION + \
         "/" + str(update.from_user.id) + ".json"
     try:
