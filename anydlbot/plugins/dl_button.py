@@ -49,6 +49,7 @@ async def ddl_call_back(bot, update):
         "thumbnails",
         str(from_user) + ".jpg"
     )
+    LOGGER.info(thumbnail_location)
     thumb_image_path = thumbnail_location
     # thumb_image_path = DOWNLOAD_LOCATION + \
     #     "/" + str(update.from_user.id) + ".jpg"
