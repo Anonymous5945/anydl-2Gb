@@ -18,7 +18,7 @@ class Config(object):
     CHUNK_SIZE = 128
     PROCESS_MAX_TIMEOUT = 3600
     # default thumbnail to be used in the videos
-    DEF_THUMB_NAIL_VID_S = os.environ.get("DEF_THUMB_NAIL_VID_S", "")
+    DEF_THUMB_NAIL_VID_S = os.environ.get("DEF_THUMB_NAIL_VID_S", "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT1RCTrWI08DGquVXOkSwqDxY35IbsXXdMs3A&usqp=CAU")
     # proxy for accessing youtube-dl in GeoRestricted Areas
     # Get your own proxy from https://github.com/rg3/youtube-dl/issues/1091#issuecomment-230163061
     HTTP_PROXY = os.environ.get("HTTP_PROXY", None)
