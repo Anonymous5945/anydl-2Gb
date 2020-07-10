@@ -44,15 +44,8 @@ async def ddl_call_back(bot, update):
     cb_data = update.data
     # youtube_dl extractors
     tg_send_type, youtube_dl_format, youtube_dl_ext = cb_data.split("=")
-    thumbnail_location = os.path.join(
-        DOWNLOAD_LOCATION,
-        "thumbnails",
-        str(from_user) + ".jpg"
-    )
-    LOGGER.info(thumbnail_location)
-    thumb_image_path = thumbnail_location
-    # thumb_image_path = DOWNLOAD_LOCATION + \
-    #     "/" + str(update.from_user.id) + ".jpg"
+    thumb_image_path = DOWNLOAD_LOCATION + \
+        "/" + str(update.from_user.id) + ".jpg"
     youtube_dl_url = update.message.reply_to_message.text
     custom_file_name = os.path.basename(youtube_dl_url)
     if "|" in youtube_dl_url:
